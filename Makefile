@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-.SILENT: brain-games
+.SILENT: install build publish package-install brain-games
+
+setup: install build publish package-install
 
 install: # установить зависимости
 	poetry install
@@ -8,13 +10,13 @@ install: # установить зависимости
 build: # собрать проект
 	poetry build
 
-publishh: # опубликовать
+publish: # опубликовать
 	poetry publish --dry-run
 
 package-install: # установить в окружение пользователя
 	 python3 -m pip install --user dist/*.whl
 
 brain-games: # запустить
-	poetry run brain-games
+	poetry run python3 -m brain_games.scripts.brain_games
 
 
