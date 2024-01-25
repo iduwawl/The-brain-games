@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-.SILENT: install build publish package-install brain-games
+.SILENT: install build publish package-install brain-games lint
 
 setup: install build publish package-install
 
@@ -19,4 +19,6 @@ package-install:
 brain-games:
 	poetry run python3 -m brain_games.scripts.brain_games
 
+lint:
+	poetry run flake8 brain_games
 
