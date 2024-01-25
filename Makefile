@@ -4,19 +4,19 @@
 
 setup: install build publish package-install
 
-install: # установить зависимости
+install:
 	poetry install
 
-build: # собрать проект
+build:
 	poetry build
 
-publish: # опубликовать
+publish:
 	poetry publish --dry-run
 
-package-install: # установить в окружение пользователя
+package-install:
 	 python3 -m pip install --user dist/*.whl
 
-brain-games: # запустить
+brain-games:
 	poetry run python3 -m brain_games.scripts.brain_games
 
 
