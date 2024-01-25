@@ -1,7 +1,9 @@
-import prompt
+from prompt import string
 
 
-def welcome_user():
+def welcome_user() -> str:
+    """Print welcome message, return input gamer's name"""
     print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}!")
+    gamers_name = string('May I have your name? ')
+    print(f"Hello, {gamers_name}!")
+    return gamers_name
