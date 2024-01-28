@@ -7,6 +7,7 @@ readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+repository = "https://github.com/iduwawl/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.12"
