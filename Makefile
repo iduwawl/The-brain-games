@@ -2,8 +2,6 @@
 
 .SILENT: install build publish package-install brain-games lint
 
-setup: install build publish package-install
-
 install:
 	poetry install
 
@@ -21,4 +19,3 @@ brain-games:
 
 lint:
 	poetry run flake8 brain_games
-
