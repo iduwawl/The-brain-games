@@ -1,5 +1,5 @@
 from brain_games.engine import welcome_gamer
-from brain_games.engine import chek_equality
+from brain_games.engine import congrats
 from random import randint
 from prompt import string
 
@@ -13,8 +13,13 @@ def run_game():
         is_modulo = 'yes' if modulo == 0 else 'no'
         print(f"Question: {random_number}")
         answer_from_gamer = string("Your answer: ")
-        chek_equality(a=is_modulo, b=answer_from_gamer, name=gamers_name)
-    return print(f"Congratulations, {gamers_name}!")
+        if answer_from_gamer == is_modulo:
+            print('Correct')
+        else:
+            print(f"'{answer_from_gamer}' is wrong answer ;(.", end=" ")
+            print(f"Correct answer was '{is_modulo}'.")
+            return print(f"Let's try again, {gamers_name}!")
+    return congrats(gamers_name)
 
 
 def main():
