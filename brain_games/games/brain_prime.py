@@ -7,7 +7,7 @@ from prompt import string
 
 def run_game():
     gamers_name = welcome_gamer()
-    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for x in range(3):
         number = randint(2, 100)
         is_prime = is_prime_num(num=number)
