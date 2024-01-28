@@ -10,7 +10,7 @@ packages = [
 repository = "https://github.com/iduwawl/python-project-49"
 
 [tool.poetry.dependencies]
-python = "~3.12"
+python = ">=3.12,<3.13"
 prompt = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
