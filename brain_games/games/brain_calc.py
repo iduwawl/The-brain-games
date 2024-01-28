@@ -7,7 +7,7 @@ from prompt import integer
 
 def run_game():
     gamers_name = welcome_gamer()
-    print("Find the greatest common divisor of given numbers.")
+    print("What is the result of the expression?")
     for x in range(3):
         first_number = randint(1, 100)
         second_number = randint(1, 100)
