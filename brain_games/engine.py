@@ -13,7 +13,7 @@ def congrats(whom: str):
     print(f"Congratulations, {whom}!")
 
 
-def chek_equality(a, b, name: str) -> str:
+def is_equaly(a, b, name: str) -> str:
     """Check the a == b"""
     if a == b:
         print('Correct')
@@ -35,7 +35,16 @@ def get_nod(a: int, b: int) -> int:
 def get_nums_list() -> list[str]:
     random_step = randint(1, 10)
     random_list = [str(x) for x in range(1, 100, random_step)]
-    sliced_list = random_list[1:11]
-    # random_number = choice(sliced_list)
-    return " ".join(sliced_list)
-    # return joined_sliced_list.replace(random_number, "..", 1)
+    return random_list[1:11]
+
+
+def is_prime_num(num: int) -> str:
+    if num > 1:
+        for i in range(2, int(num / 2) + 1):
+            if (num % i) == 0:
+                return 'no'
+                break
+        else:
+            return 'yes'
+    else:
+        return 'no'

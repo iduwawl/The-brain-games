@@ -12,8 +12,8 @@ def run_game():
         list_of_nums = get_nums_list()
         random_number = choice(list_of_nums)
         joined_sliced_list = " ".join(list_of_nums)
-        list_with_no_num = joined_sliced_list.replace(random_number, "..", 1)
-        print(f"Question: {list_with_no_num}")
+        list_with_miss_num = joined_sliced_list.replace(random_number, "..", 1)
+        print(f"Question: {list_with_miss_num}")
         gamers_answer = string("Your answer: ")
         if gamers_answer == random_number:
             print('Correct!')
