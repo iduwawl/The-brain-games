@@ -2,8 +2,6 @@
 
 .SILENT: install build publish package-install brain-games lint
 
-setup: install build publish package-install
-
 install:
 	poetry install
 
@@ -16,9 +14,11 @@ publish:
 package-install:
 	 python3 -m pip install --user dist/*.whl
 
+package-reinstall:
+	 python3 -m pip --force-reinstall --user dist/*.whl
+
 brain-games:
 	poetry run python3 -m brain_games.scripts.brain_games
 
 lint:
 	poetry run flake8 brain_games
-

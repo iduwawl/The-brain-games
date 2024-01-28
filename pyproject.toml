@@ -7,9 +7,10 @@ readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+repository = "https://github.com/iduwawl/python-project-49"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.8.1,<4.0"
 prompt = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
@@ -21,4 +22,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.brain_even:main"
+brain-even = "brain_games.games.brain_even:main"
+brain-calc = "brain_games.games.brain_calc:main"
+brain-gcd = "brain_games.games.brain_gcd:main"
+brain-progression = "brain_games.games.brain_progression:main"
+brain-prime = "brain_games.games.brain_prime:main"
