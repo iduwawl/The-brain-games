@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
-.SILENT: install build publish package-install brain-games lint
+.SILENT: install test build brain-games lint selfcheck check build
 
 install:
 	poetry install
 
+test:
+	poetry run pytest
+
 test-coverage:
 	poetry run pytest --cov=brain_games --cov-report xml
-
-build:
-	poetry build
 
 publish:
 	poetry publish --dry-run
@@ -22,3 +22,11 @@ brain-games:
 
 lint:
 	poetry run flake8 brain_games
+
+selfcheck:
+	poetry check
+
+check: selfcheck test lint
+
+build: chek
+	poetry build
