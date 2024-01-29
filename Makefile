@@ -9,7 +9,7 @@ test:
 	poetry run pytest
 
 test-coverage:
-	poetry run pytest --cov=brain_games --cov-report xml
+	poetry run pytest --cov=hexlet-code --cov-report xml
 
 publish:
 	poetry publish --dry-run
