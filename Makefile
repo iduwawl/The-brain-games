@@ -5,6 +5,9 @@
 install:
 	poetry install
 
+test-coverage:
+	poetry run pytest --cov=brain_games --cov-report xml
+
 build:
 	poetry build
 
@@ -13,9 +16,6 @@ publish:
 
 package-install:
 	 python3 -m pip install --user dist/*.whl
-
-package-reinstall:
-	 python3 -m pip --force-reinstall --user dist/*.whl
 
 brain-games:
 	poetry run python3 -m brain_games.scripts.brain_games

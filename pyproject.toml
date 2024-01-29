@@ -12,9 +12,11 @@ repository = "https://github.com/iduwawl/python-project-49"
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
 prompt = "^0.4.1"
+pytest = "^8.0.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.0.0"
+pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core"]
