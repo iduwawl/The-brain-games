@@ -4,10 +4,18 @@ version = "0.1.0"
 description = ""
 authors = ["Aleksandr Sukhomlinov <iduwawl@gmail.com>"]
 readme = "README.md"
-packages = [
-  { include = "brain_games" },
-]
+packages = [{ include = "brain_games" }, ]
 repository = "https://github.com/iduwawl/python-project-49"
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'License :: OSI Approved :: Python Software Foundation License',
+    'Intended Audience :: End Users/Desktop',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX',
+    'Programming Language :: Python'
+]
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
