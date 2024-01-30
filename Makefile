@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-
-.SILENT: install build publish package-install brain-games lint
+.SILENT: brain-even brain-calc brain-gcd brain-progression brain-prime
 
 install:
 	poetry install
@@ -14,11 +12,23 @@ publish:
 package-install:
 	 python3 -m pip install --user dist/*.whl
 
-package-reinstall:
-	 python3 -m pip --force-reinstall --user dist/*.whl
-
-brain-games:
-	poetry run python3 -m brain_games.scripts.brain_games
-
 lint:
 	poetry run flake8 brain_games
+
+brain-games:
+	poetry run brain-games
+
+brain-even:
+	poetry run brain-even
+
+brain-calc:
+	poetry run brain-calc
+
+brain-gcd:
+	poetry run brain-gcd
+
+brain-progression:
+	poetry run brain-progression
+
+brain-prime:
+	poetry run brain-prime

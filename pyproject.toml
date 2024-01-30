@@ -1,13 +1,21 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Brain-Games is a project that includes 5 different games."
 authors = ["Aleksandr Sukhomlinov <iduwawl@gmail.com>"]
 readme = "README.md"
-packages = [
-  { include = "brain_games" },
-]
+packages = [{ include = "brain_games" }, ]
 repository = "https://github.com/iduwawl/python-project-49"
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'License :: OSI Approved :: Python Software Foundation License',
+    'Intended Audience :: End Users/Desktop',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX',
+    'Programming Language :: Python'
+]
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
@@ -22,8 +30,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.games.brain_even:main"
-brain-calc = "brain_games.games.brain_calc:main"
-brain-gcd = "brain_games.games.brain_gcd:main"
-brain-progression = "brain_games.games.brain_progression:main"
-brain-prime = "brain_games.games.brain_prime:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
