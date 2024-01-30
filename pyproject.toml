@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Brain-Games is a project that includes 5 different games."
 authors = ["Aleksandr Sukhomlinov <iduwawl@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "brain_games" }, ]
@@ -20,11 +20,9 @@ classifiers = [
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
 prompt = "^0.4.1"
-pytest = "^8.0.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.0.0"
-pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core"]
