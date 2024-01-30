@@ -1,5 +1,3 @@
-
-
 .SILENT: brain-even brain-calc brain-gcd brain-progression brain-prime
 
 install:
@@ -14,11 +12,11 @@ publish:
 package-install:
 	 python3 -m pip install --user dist/*.whl
 
-brain-games:
-	poetry run python3 -m brain_games.scripts.brain_games
-
 lint:
 	poetry run flake8 brain_games
+
+brain-games:
+	poetry run brain-games
 
 brain-even:
 	poetry run brain-even
