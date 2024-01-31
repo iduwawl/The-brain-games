@@ -10,14 +10,7 @@ def get_expression_and_result():
     operators = ("-", "+", "*")
     random_op = choice(operators)
     expression = f"{first_number} {random_op} {second_number}"
-    result = int()
-    match random_op:
-        case '-':
-            result = first_number - second_number
-        case '+':
-            result = first_number + second_number
-        case '*':
-            result = first_number * second_number
+    result = eval(first_number, random_op, second_number)
     return expression, str(result)
 
 
