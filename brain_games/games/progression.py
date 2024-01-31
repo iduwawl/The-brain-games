@@ -8,9 +8,9 @@ def get_list_and_skip_num():
     random_list = [str(x) for x in range(1, 100, randint(1, 10))]
     sliced_list = random_list[1:11]
     random_number = choice(sliced_list)
-    join_list_in_str = " ".join(sliced_list)
-    str_with_skip_num = join_list_in_str.replace(random_number, "..", 1)
-    return str_with_skip_num, random_number
+    join_list = " ".join(sliced_list)
+    list_with_skip_num = join_list.replace(random_number, "..", 1)
+    return list_with_skip_num, random_number
 
 
 def run_progression_game():
