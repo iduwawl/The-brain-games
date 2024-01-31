@@ -7,7 +7,7 @@ from random import choice
 def get_expression_and_result():
     first_number = randint(1, 100)
     second_number = randint(1, 100)
-    operators = ("-", "+", "*")
+    operators = "-", "+", "*"
     random_op = choice(operators)
     expression = f"{first_number} {random_op} {second_number}"
     result = eval(first_number, random_op, second_number)
