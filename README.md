@@ -1,12 +1,16 @@
-### <h1>Brain-Games</h1>
 
+<div align="center">
+<h1>Brain-Games</h1>
+ 
 [![Actions Status](https://github.com/iduwawl/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/iduwawl/python-project-49/actions) 
 <a href="https://codeclimate.com/github/iduwawl/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/41c9897ba05deee32951/maintainability" /></a> 
 
+</div>
+
+### Description
 Brain-Games is a project that includes 5 different games. <br>
 The each game works in the question-answer format. <br>
-Gamer should answer correct three times, if answer was wrong game is over. <br>
-Answer can be bool(yes or no) or it can be number.
+For victory gamer should answer correct three times, if answer was wrong game is over.
 
 | Game                                                                        | Description                                             |
 |-----------------------------------------------------------------------------|---------------------------------------------------------|
@@ -19,8 +23,20 @@ Answer can be bool(yes or no) or it can be number.
  
 ---
 
+### Dependencies
+This project was built using these tools:
+| Tool                                                                        | Description                                             |
+|-----------------------------------------------------------------------------|---------------------------------------------------------|
+| [poetry](https://python-poetry.org/)                                        | "Python dependency management and packaging made easy"  |
+| [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement" |
 
-### Install
+---
 
-### Demonstration
+### Installition
+
+(git clone git@github.com:iduwawl/python-project-49.git)
+
+### How to run the game
+
+### Examples
 
