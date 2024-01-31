@@ -4,12 +4,15 @@ from random import randint
 
 
 def is_prime_num(number: int) -> str:
-    for i in range(2, int(number / 2) + 1):
-        if (number % i) == 0:
-            return 'no'
-            break
-        else:
-            return 'yes'
+    if number > 1:
+        for i in range(2, int(number / 2) + 1):
+            if (number % i) == 0:
+                return 'no'
+                break
+            else:
+                return 'yes'
+    else:
+        return 'no'
 
 
 def get_num_and_is_prime():
