@@ -4,7 +4,6 @@ from random import randint
 
 
 def get_nod(num1: int, num2: int) -> str:
-    """Return nod of num1 and num2"""
     while num1 != num2:
         if num1 > num2:
             num1 -= num2
