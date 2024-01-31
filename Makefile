@@ -1,34 +1,30 @@
-.SILENT: brain-even brain-calc brain-gcd brain-progression brain-prime
+.SILENT: install test lint selfcheck check build brain_games
 
 install:
 	poetry install
 
-build:
+test:
+	poetry run pytest
+
+test-coverage:
+	poetry run pytest --cov=hexlet_code --cov-report xml
+
+package-install:
+	 python3 -m pip install --user dist/*.whl
+
+selfcheck:
+	poetry check
+
+check: selfcheck test lint
+
+build: chek
 	poetry build
 
 publish:
 	poetry publish --dry-run
-
-package-install:
-	 python3 -m pip install --user dist/*.whl
 
 lint:
 	poetry run flake8 brain_games
 
 brain-games:
 	poetry run brain-games
-
-brain-even:
-	poetry run brain-even
-
-brain-calc:
-	poetry run brain-calc
-
-brain-gcd:
-	poetry run brain-gcd
-
-brain-progression:
-	poetry run brain-progression
-
-brain-prime:
-	poetry run brain-prime
