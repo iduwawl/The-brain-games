@@ -9,8 +9,8 @@ def is_prime_num(number: int) -> str:
             if (number % i) == 0:
                 return 'no'
                 break
-            else:
-                return 'yes'
+        else:
+            return 'yes'
     else:
         return 'no'
 
