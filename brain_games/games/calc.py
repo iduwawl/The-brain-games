@@ -10,7 +10,7 @@ def get_expression_and_result():
     op1, op2, op3 = "-", "+", "*"
     random_op = choice([op1, op2, op3])
     expression = f"{first_number} {random_op} {second_number}"
-    result_of_calc = eval(first_number, random_op, second_number)
+    result_of_calc = eval(expression)
     return expression, str(result_of_calc)
 
 
