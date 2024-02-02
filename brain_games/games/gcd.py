@@ -3,7 +3,7 @@ from brain_games.engine import run_game
 from random import randint
 
 
-def get_nod(num1: int, num2: int) -> str:
+def get_nod(num1: int, num2: int):
     while num1 != num2:
         if num1 > num2:
             num1 -= num2
