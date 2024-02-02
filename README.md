@@ -6,13 +6,13 @@
 
 </div>
 
-### Description
-Brain-Games is a project that includes 5 different games. <br>
-The each game works in the question-answer format. <br>
+## Description
+Brain-Games is a project that contains 5 different games. <br>
+Each game asks a question that the gamer must answer correctly.. <br>
 For victory gamer should answer correct three times, if answer was wrong game is over.
 
 
-### Dependencies
+## Tools
 This project was built using these tools:
 | Tool                                                                        | Description                                             |
 |-----------------------------------------------------------------------------|---------------------------------------------------------|
@@ -23,22 +23,24 @@ This project was built using these tools:
 
 ---
 
-### Installition
-1. `git clone git@github.com:iduwawl/python-project-49.git`
-2. 
+## Installition
+For the game to work properly, make sure you have poetry installed.
+1. Clone the repository `git clone git@github.com:iduwawl/The-brain-games.git`
+2. Go to project folder `cd The-brain-gaames`
+3. Install the game package and poetry dependencies `make setup`
 
-### Usage
-
-| Game                                                                        | Description                                             |
+## Usage
+To start the game, enter the name of the game in the console.
+| Name of the game                                                            | Description                                             |
 |-----------------------------------------------------------------------------|---------------------------------------------------------|
 | `brain-even`                                                                | "Answer 'yes' or 'no' if the number is even."           |
-| `brain-calc`                                                                  | "What the result of the expression"                     |  
-| `brain-gcd`                                                                   | "Find the GCD of of given numbers"                      |
-| `brain-progression`                                                           | "What number the missing in the progression"            |
-| `brain-prime`                                                                 | "Answer "yes" if given number is prime"                 |
+| `brain-calc`                                                                | "What the result of the expression"                     |  
+| `brain-gcd`                                                                 | "Find the GCD of of given numbers"                      |
+| `brain-progression`                                                         | "What number the missing in the progression"            |
+| `brain-prime`                                                               | "Answer "yes" if given number is prime"                 |
 
  
 ---
 
-### Examples
+## Examples
 
