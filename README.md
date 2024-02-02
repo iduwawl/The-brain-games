@@ -25,9 +25,18 @@ This project was built using these tools:
 
 ## Installition
 For the game to work properly, make sure you have poetry installed.
-1. Clone the repository `git clone git@github.com:iduwawl/The-brain-games.git`
-2. Go to project folder `cd The-brain-gaames`
-3. Install the game package and poetry dependencies `make setup`
+1. Clone the repository
+    ```bash
+    git clone git@github.com:iduwawl/The-brain-games.git
+    ```
+2. Go to project folder
+   ```bash
+    cd The-brain-gaames
+    ```
+3. Install the game package and poetry dependencies
+    ```bash
+    make setup
+    ```
 
 ## Usage
 To start the game, enter the name of the game in the console.
