@@ -7,7 +7,7 @@
 </div>
 
 ## Description
-Brain-Games is a project that contains 5 different games. <br>
+`Brain-Games` is a project that contains 5 different games. <br>
 Each game asks a question that the gamer must answer correctly.. <br>
 For victory gamer should answer correct three times, if answer was wrong game is over.
 
@@ -24,7 +24,7 @@ This project was built using these tools:
 ---
 
 ## Installition
-For the game to work properly, make sure you have poetry installed.
+For the project to work properly, make sure you have `poetry` installed.
 1. Clone the repository
     ```bash
     git clone git@github.com:iduwawl/The-brain-games.git
@@ -52,4 +52,10 @@ To start the game, enter the name of the game in the console.
 ---
 
 ## Examples
+Installation
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
 
