@@ -1,4 +1,3 @@
-
 <div align="center">
 <h1>Brain-Games</h1>
  
@@ -12,31 +11,34 @@ Brain-Games is a project that includes 5 different games. <br>
 The each game works in the question-answer format. <br>
 For victory gamer should answer correct three times, if answer was wrong game is over.
 
-| Game                                                                        | Description                                             |
-|-----------------------------------------------------------------------------|---------------------------------------------------------|
-| brain-even                                                                  | "Answer 'yes' or 'no' if the number is even."           |
-| brain-calc                                                                  | "What the result of the expression"                     |  
-| brain-gcd                                                                   | "Find the GCD of of given numbers"                      |
-| brain-progression                                                           | "What number the missing in the progression"            |
-| brain-prime                                                                 | "Answer "yes" if given number is prime"                 |
-
- 
----
 
 ### Dependencies
 This project was built using these tools:
 | Tool                                                                        | Description                                             |
 |-----------------------------------------------------------------------------|---------------------------------------------------------|
 | [poetry](https://python-poetry.org/)                                        | "Python dependency management and packaging made easy"  |
-| [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement" |
+| [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement"                 |
+| [promtp]( https://pypi.org/project/prompt/)                                 | "Prompt and verify user input on the command line."     |
+
 
 ---
 
 ### Installition
+1. `git clone git@github.com:iduwawl/python-project-49.git`
+2. 
 
-(git clone git@github.com:iduwawl/python-project-49.git)
+### Usage
 
-### How to run the game
+| Game                                                                        | Description                                             |
+|-----------------------------------------------------------------------------|---------------------------------------------------------|
+| `brain-even`                                                                | "Answer 'yes' or 'no' if the number is even."           |
+| `brain-calc`                                                                  | "What the result of the expression"                     |  
+| `brain-gcd`                                                                   | "Find the GCD of of given numbers"                      |
+| `brain-progression`                                                           | "What number the missing in the progression"            |
+| `brain-prime`                                                                 | "Answer "yes" if given number is prime"                 |
+
+ 
+---
 
 ### Examples
 
