@@ -9,7 +9,7 @@ def get_nod(num1: int, num2: int) -> str:
             num1 -= num2
         else:
             num2 -= num1
-    return str(num1)
+    return num1
 
 
 def get_nums_and_nod():
@@ -17,7 +17,7 @@ def get_nums_and_nod():
     second_number = randint(1, 100)
     nod = get_nod(first_number, second_number)
     numbers = f"{first_number} {second_number}"
-    return numbers, nod
+    return numbers, str(nod)
 
 
 def run_gcd_game():
