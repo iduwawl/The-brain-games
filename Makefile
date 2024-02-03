@@ -1,4 +1,4 @@
-.SILENT: brain_games install build lint setup
+.SILENT: install build lint brain_games setup
 
 install:
 	poetry install
