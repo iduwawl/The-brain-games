@@ -1,4 +1,4 @@
-.SILENT: brain_games brain-even brain-gcd brain-calc brain-progression brain-prime
+.SILENT: brain_games install build lint setup
 
 install:
 	poetry install
