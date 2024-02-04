@@ -6,9 +6,9 @@ from random import randint
 
 def get_list_and_skip_num():
     random_list = [str(x) for x in range(1, 100, randint(1, 10))][0:10]
-    random_number = choice(random_list)
+    random_num = choice(random_list)
     list_with_skip_num = " ".join(random_list).replace(random_number, "..", 1)
-    return list_with_skip_num, random_number
+    return list_with_skip_num, random_num
 
 
 def run_progression_game():
