@@ -3,9 +3,9 @@ from brain_games.engine import run_game
 from random import randint
 
 
-def is_prime_num(number: int) -> str:
-    for i in range(2, int(number / 2) + 1):
-        if (number % i) == 0:
+def is_prime_num(num: int) -> str:
+    for i in range(2, int(num / 2) + 1):
+        if (num % i) == 0:
             return 'no'
             break
     else:
@@ -13,9 +13,9 @@ def is_prime_num(number: int) -> str:
 
 
 def get_num_and_is_prime():
-    number = randint(2, 100)
-    is_prime = is_prime_num(number)
-    return number, is_prime
+    random_num = randint(2, 100)
+    is_prime = is_prime_num(random_num)
+    return random_num, is_prime
 
 
 def run_prime_game():
