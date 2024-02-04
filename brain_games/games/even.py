@@ -5,7 +5,7 @@ from random import randint
 
 def get_num_and_is_even_answer():
     random_num = randint(1, 100)
-    is_even = 'yes' if number % 2 == 0 else 'no'
+    is_even = 'yes' if random_num % 2 == 0 else 'no'
     return random_num, is_even
 
 
