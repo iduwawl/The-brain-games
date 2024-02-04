@@ -4,9 +4,9 @@ from random import randint
 
 
 def get_num_and_is_even_answer():
-    number = randint(1, 100)
+    random_num = randint(1, 100)
     is_even = 'yes' if number % 2 == 0 else 'no'
-    return number, is_even
+    return random_num, is_even
 
 
 def run_even_game():
