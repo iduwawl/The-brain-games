@@ -13,11 +13,11 @@ def get_nod(num1: int, num2: int):
 
 
 def get_nums_and_nod():
-    first_number = randint(1, 100)
-    second_number = randint(1, 100)
-    nod = get_nod(first_number, second_number)
-    numbers = f"{first_number} {second_number}"
-    return numbers, str(nod)
+    random_num1 = randint(1, 100)
+    random_num2 = randint(1, 100)
+    nod = get_nod(random_num1, random_num2)
+    str_numbers = f"{random_num1} {random_num2}"
+    return str_numbers, str(nod)
 
 
 def run_gcd_game():
