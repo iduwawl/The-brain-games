@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Brain-Games is a project that contains 5 different games."
 authors = ["Aleksandr Sukhomlinov <iduwawl@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "brain_games" }, ]
+packages = [
+    { include = "brain_games" },
+]
 repository = "https://github.com/iduwawl/The-brain-games"
 classifiers = [
     'Development Status :: 5 - Production/Stable',
