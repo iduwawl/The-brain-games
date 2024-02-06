@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from games.calc import get_expression_and_result
-from games.calc import GAME_RULE
-from brain_games.engine import run_game
+import games.calc
+import engine
 
 
 def main():
-    run_game(get_expression_and_result, GAME_RULE)
+    engine.run_game(games.calc.get_expression_and_result,
+                    games.calc.GAME_RULE)
 
 
 if __name__ == "__main__":

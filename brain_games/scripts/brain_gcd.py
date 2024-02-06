@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from games.gcd import get_nums_and_nod
-from games.gcd import GAME_RULE
-from brain_games.engine import run_game
+import games.gcd
+import engine
 
 
 def main():
-    run_game(get_nums_and_nod, GAME_RULE)
+    engine.run_game(games.gcd.get_nums_and_nod,
+                    games.gcd.GAME_RULE)
 
 
 if __name__ == "__main__":
