@@ -9,13 +9,13 @@ def get_random_list():
     return random_list
 
 
-def get_joined_list(list_to_join) -> str:
+def get_joined_list(list_to_join: list) -> str:
     list_to_join = get_random_list()
     joined_list = " ".join(list_to_join)
     return joined_list
 
 
-def get_list_with_replaced_num_and_num(list_to_replace_num: str):
+def get_list_with_replaced_num_and_num(list_to_replace_num):
     list_to_replace_num = get_joined_list()
     random_num = choice(list_to_replace_num)
     list_with_replaced_num = list_to_replace_num.replace(random_num, "..", 1)

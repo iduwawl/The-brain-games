@@ -4,7 +4,7 @@ GAME_RULE = ('Answer "yes" if given number is prime. '
              'Otherwise answer "no".')
 
 
-def is_prime_num(num: int) -> str:
+def is_prime_num(num: int) -> bool:
     for i in range(2, int(num / 2) + 1):
         if (num % i) == 0:
             return False
