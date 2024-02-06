@@ -9,15 +9,14 @@ def get_random_list():
     return random_list
 
 
-def turn_list_to_str_with_skip_num():
+def get_transformed_list_to_str(random_list: list) -> str:
     random_list = get_random_list()
-    random_num = choice(random_list)
-    list_with_skip_num = " ".join(random_list).replace(random_num, "..", 1)
-    return list_with_skip_numm
+    progrss_with_miss_num = " ".join(random_list)
+    return progrss_with_miss_num
 
 
-def get_list_and_skip_num():
-    random_list = [str(x) for x in range(1, 100, randint(1, 10))][0:10]
-    random_num = choice(random_list)
-    list_with_skip_num = " ".join(random_list).replace(random_num, "..", 1)
-    return list_with_skip_num, random_num
+def get_str_with_miss_num_and_num(random_str: str):
+    random_str = get_transformed_list_to_str()
+    random_num = choice(random_str)
+    str_with_mis_num = random_str.replace(random_num, "..", 1)
+    return str_with_mis_num, random_num
