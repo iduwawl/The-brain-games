@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from games import progression
+from brain_games.games import progression
 import engine
 
 
