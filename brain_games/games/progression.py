@@ -9,14 +9,14 @@ def get_random_list():
     return random_list
 
 
-def get_transformed_list_to_str(random_list: list) -> str:
-    random_list = get_random_list()
-    progrss_with_miss_num = " ".join(random_list)
-    return progrss_with_miss_num
+def get_transformed_list_to_str(list_progression) -> str:
+    list_progression = get_random_list()
+    str_progression = " ".join(list_progression)
+    return str_progression
 
 
-def get_str_with_miss_num_and_num(random_str: str):
-    random_str = get_transformed_list_to_str()
-    random_num = choice(random_str)
-    str_with_mis_num = random_str.replace(random_num, "..", 1)
+def get_str_with_miss_num_and_num(str_progression: str):
+    str_progression = get_transformed_list_to_str()
+    random_num = choice(str_progression)
+    str_with_mis_num = str_progression.replace(random_num, "..", 1)
     return str_with_mis_num, random_num
