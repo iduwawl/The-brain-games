@@ -1,4 +1,3 @@
-from brain_games.engine import run_game
 from random import randint
 
 GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -17,7 +16,3 @@ def get_num_and_is_even_answer():
     else:
         answer = 'no'
     return random_num, answer
-
-
-def run_even_game():
-    run_game(get_num_and_is_even_answer, EVEN_GAME_RULE)

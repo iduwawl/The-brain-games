@@ -1,4 +1,3 @@
-from brain_games.rules import COUNT_CORRECT_ANSWER
 from prompt import string
 
 

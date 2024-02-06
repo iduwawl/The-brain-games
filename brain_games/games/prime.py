@@ -1,4 +1,3 @@
-from brain_games.engine import run_game
 from random import randint
 
 GAME_RULE = ('Answer "yes" if given number is prime. '
@@ -23,7 +22,3 @@ def get_num_and_is_prime_answer():
     else:
         answer = 'no'
     return random_num, answer
-
-
-def run_prime_game():
-    run_game(get_num_and_is_prime, PRIME_GAME_RULE)

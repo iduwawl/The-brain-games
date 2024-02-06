@@ -1,4 +1,3 @@
-from brain_games.engine import run_game
 from random import randint
 from random import choice
 
@@ -13,7 +12,3 @@ def get_expression_and_result():
     expression = f"{random_num1} {random_op} {random_num2}"
     result_of_calc = eval(expression)
     return expression, str(result_of_calc)
-
-
-def run_calc_game():
-    run_game(get_expression_and_result, CALC_GAME_RULE)
