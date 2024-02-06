@@ -6,10 +6,10 @@ from random import randint
 def is_prime_num(num: int) -> str:
     for i in range(2, int(num / 2) + 1):
         if (num % i) == 0:
-            return 'no'
+            return False
             break
     else:
-        return 'yes'
+        return True
 
 
 def get_num_and_is_prime():
