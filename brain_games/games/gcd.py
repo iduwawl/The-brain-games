@@ -1,6 +1,7 @@
-from brain_games.rules import GCD_GAME_RULE
 from brain_games.engine import run_game
 from random import randint
+
+GAME_RULE = "Find the greatest common divisor of given numbers."
 
 
 def get_nod(num1: int, num2: int) -> int:

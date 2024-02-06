@@ -1,7 +1,8 @@
-from brain_games.rules import CALC_GAME_RULE
 from brain_games.engine import run_game
 from random import randint
 from random import choice
+
+GAME_RULE = "What is the result of the expression?"
 
 
 def get_expression_and_result():
