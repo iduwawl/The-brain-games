@@ -4,7 +4,7 @@ from brain_games import engine
 
 
 def main():
-    engine.run_game(progression.get_list_with_replaced_num_and_num,
+    engine.run_game(progression.get_joined_list_with_replaced_num_and_num,
                     progression.GAME_RULE)
 
 
