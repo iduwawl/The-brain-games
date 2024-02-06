@@ -3,6 +3,7 @@ from prompt import string
 
 
 def run_game(get_question_and_answer, rule):
+    COUNT_CORRECT_ANSWER = 3
     gamers_name = string("Welcome to the Brain Games!\n"
                          "May I have your name? ")
     print(f"Hello, {gamers_name}!\n"

@@ -14,10 +14,15 @@ def is_prime_num(num: int) -> str:
         return True
 
 
-def get_num_and_is_prime():
+def get_num_and_is_prime_answer():
     random_num = randint(2, 100)
     is_prime = is_prime_num(random_num)
-    return random_num, is_prime
+    answer = str()
+    if is_prime:
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return random_num, answer
 
 
 def run_prime_game():
