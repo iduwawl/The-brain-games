@@ -10,5 +10,5 @@ def get_expression_and_result():
     op1, op2, op3 = "-", "+", "*"
     random_op = choice([op1, op2, op3])
     expression = f"{random_num1} {random_op} {random_num2}"
-    result_of_calc = eval(expression)
-    return expression, str(result_of_calc)
+    result_of_expression = eval(expression)
+    return expression, str(result_of_expression)
