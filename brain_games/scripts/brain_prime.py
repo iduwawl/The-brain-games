@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-import games.prime
+from games import prime
 import engine
 
 
 def main():
-    engine.run_game(games.prime.get_num_and_is_prime_answer,
-                    games.prime.GAME_RULE)
+    engine.run_game(prime.get_num_and_is_prime_answer,
+                    prime.GAME_RULE)
 
 
 if __name__ == "__main__":

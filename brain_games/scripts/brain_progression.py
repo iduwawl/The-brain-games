@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-import games.progression
+from games import progression
 import engine
 
 
 def main():
-    engine.run_game(games.progression.get_str_with_miss_num_and_num,
-                    games.progression.GAME_RULE)
+    engine.run_game(progression.get_list_with_replaced_num_and_num,
+                    progression.GAME_RULE)
 
 
 if __name__ == "__main__":

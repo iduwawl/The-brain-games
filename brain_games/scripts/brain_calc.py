@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-import games.calc
+from games import calc
 import engine
 
 
 def main():
-    engine.run_game(games.calc.get_expression_and_result,
-                    games.calc.GAME_RULE)
+    engine.run_game(calc.get_expression_and_result,
+                    calc.GAME_RULE)
 
 
 if __name__ == "__main__":
