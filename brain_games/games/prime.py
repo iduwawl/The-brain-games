@@ -2,7 +2,6 @@ from random import randint
 
 GAME_RULE = ('Answer "yes" if given number is prime. '
              'Otherwise answer "no".')
-RANDOM_NUM = randint(2, 100)
 
 
 def is_prime_num(num: int) -> bool:
@@ -14,12 +13,12 @@ def is_prime_num(num: int) -> bool:
         return True
 
 
-def get_yes_or_no_answer(value: bool) -> str:
-    if value:
-        return 'yes'
+def get_num_and_is_prime_answer():
+    RANDOM_NUM = randint(2, 100)
+    is_prime = is_prime_num(RANDOM_NUM)
+    answer = str()
+    if is_prime:
+        answer = 'yes'
     else:
-        return 'no'
-
-
-is_prime = is_prime_num(RANDOM_NUM)
-yes_or_no_answer = get_yes_or_no_answer(is_prime)
+        answer = 'no'
+    return RANDOM_NUM, answer

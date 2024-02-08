@@ -4,8 +4,7 @@ from brain_games import engine
 
 
 def main():
-    engine.run_game(calc.expression,
-                    calc.result_of_expression,
+    engine.run_game(calc.question_and_answer,
                     calc.GAME_RULE)
 
 
