@@ -2,12 +2,12 @@ from prompt import string
 
 
 def run_game(get_question_and_answer, rule):
-    COUNT_CORRECT_ANSWER = 3
+    ROUNDS = 3
     gamers_name = string("Welcome to the Brain Games!\n"
                          "May I have your name? ")
     print(f"Hello, {gamers_name}!\n"
           f'{rule}')
-    for _ in range(COUNT_CORRECT_ANSWER):
+    for _ in range(ROUNDS):
         question, correct_answer = get_question_and_answer()
         gamer_answer = string(f"Question: {question}\n"
                               "Your answer: ")
