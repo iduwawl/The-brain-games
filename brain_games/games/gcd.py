@@ -1,6 +1,8 @@
 from random import randint
 
 GAME_RULE = "Find the greatest common divisor of given numbers."
+RANDOM_NUM1 = randint(1, 100)
+RANDOM_NUM2 = randint(1, 100)
 
 
 def get_gcd(num1: int, num2: int) -> int:
@@ -12,9 +14,10 @@ def get_gcd(num1: int, num2: int) -> int:
     return num1
 
 
-def get_nums_and_gcd():
-    random_num1 = randint(1, 100)
-    random_num2 = randint(1, 100)
-    nod = get_nod(random_num1, random_num2)
-    str_numbers = f"{random_num1} {random_num2}"
-    return str_numbers, str(nod)
+def get_str_nums(num1: int, num2: int) -> str:
+    str_nums = f"{num1} {num2}"
+    return str_nums
+
+
+gcd_of_nums = get_gcd(RANDOM_NUM1, RANDOM_NUM2)
+str_nums = get_str_nums(RANDOM_NUM1, RANDOM_NUM2)

@@ -4,7 +4,8 @@ from brain_games import engine
 
 
 def main():
-    engine.run_game(even.get_num_and_is_even_answer,
+    engine.run_game(even.RANDOM_NUM,
+                    even.yes_or_no_answer,
                     even.GAME_RULE)
 
 

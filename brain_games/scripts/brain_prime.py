@@ -4,7 +4,8 @@ from brain_games import engine
 
 
 def main():
-    engine.run_game(prime.get_num_and_is_prime_answer,
+    engine.run_game(prime.RANDOM_NUM,
+                    prime.yes_or_no_answer,
                     prime.GAME_RULE)
 
 
