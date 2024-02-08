@@ -5,13 +5,13 @@ RANDOM_NUM1 = randint(1, 100)
 RANDOM_NUM2 = randint(1, 100)
 
 
-def get_gcd(num1: int, num2: int) -> int:
+def get_gcd(num1: int, num2: int) -> str:
     while num1 != num2:
         if num1 > num2:
             num1 -= num2
         else:
             num2 -= num1
-    return num1
+    return str(num1)
 
 
 def get_str_nums(num1: int, num2: int) -> str:
