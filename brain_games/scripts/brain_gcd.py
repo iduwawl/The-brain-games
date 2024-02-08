@@ -4,8 +4,7 @@ from brain_games import engine
 
 
 def main():
-    engine.run_game(gcd.str_nums,
-                    gcd.gcd_of_nums,
+    engine.run_game(gcd.get_nums_and_nod,
                     gcd.GAME_RULE)
 
 
