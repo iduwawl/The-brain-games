@@ -9,11 +9,10 @@ def is_even_num(num: int) -> bool:
     return num % 2 == 0
 
 
-def get_question_and_answer():
-    RANDOM_NUM = randint(MIN_RANGE, MAX_RANGE)
-    is_even = is_even_num(RANDOM_NUM)
-    if is_even:
-        answer = 'yes'
+def get_question_and_correct_answer():
+    question = randint(MIN_RANGE, MAX_RANGE)
+    if is_even_num(question):
+        correct_answer = 'yes'
     else:
-        answer = 'no'
-    return RANDOM_NUM, answer
+        correct_answer = 'no'
+    return question, correct_answer

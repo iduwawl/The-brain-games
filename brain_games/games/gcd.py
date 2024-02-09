@@ -14,9 +14,9 @@ def get_gcd(num1: int, num2: int) -> int:
     return num1
 
 
-def get_question_and_answer():
-    RANDOM_NUM1 = randint(MIN_RANGE, MAX_RANGE)
-    RANDOM_NUM2 = randint(MIN_RANGE, MAX_RANGE)
-    nod = get_gcd(RANDOM_NUM1, RANDOM_NUM2)
-    str_numbers = f"{RANDOM_NUM1} {RANDOM_NUM2}"
-    return str_numbers, str(nod)
+def get_question_and_correct_answer():
+    random_num1 = randint(MIN_RANGE, MAX_RANGE)
+    random_num2 = randint(MIN_RANGE, MAX_RANGE)
+    correct_answer = get_gcd(random_num1, random_num2)
+    question = f"{random_num1} {random_num2}"
+    return question, str(correct_answer)

@@ -8,7 +8,7 @@ def run_game(game):
     print(f"Hello, {gamers_name}!\n"
           f'{game.GAME_RULE}')
     for _ in range(NUM_OF_ROUNDS):
-        question, correct_answer = game.get_question_and_answer()
+        question, correct_answer = game.get_question_and_correct_answer()
         gamer_answer = string(f"Question: {question}\n"
                               "Your answer: ")
         if gamer_answer == correct_answer:
