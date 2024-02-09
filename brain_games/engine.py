@@ -1,14 +1,14 @@
 from prompt import string
+NUM_OF_ROUNDS = 3
 
 
-def run_game(get_question_and_answer, rule):
-    ROUNDS = 3
+def run_game(game):
     gamers_name = string("Welcome to the Brain Games!\n"
                          "May I have your name? ")
     print(f"Hello, {gamers_name}!\n"
-          f'{rule}')
-    for _ in range(ROUNDS):
-        question, correct_answer = get_question_and_answer()
+          f'{game.GAME_RULE}')
+    for _ in range(NUM_OF_ROUNDS):
+        question, correct_answer = game.get_question_and_answer()
         gamer_answer = string(f"Question: {question}\n"
                               "Your answer: ")
         if gamer_answer == correct_answer:

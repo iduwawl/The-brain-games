@@ -2,6 +2,8 @@ from random import randint
 
 GAME_RULE = ('Answer "yes" if given number is prime. '
              'Otherwise answer "no".')
+MIN_RANGE = 2
+MAX_RANGE = 100
 
 
 def is_prime_num(num: int) -> bool:
@@ -13,8 +15,8 @@ def is_prime_num(num: int) -> bool:
         return True
 
 
-def get_num_and_is_prime_answer():
-    RANDOM_NUM = randint(2, 100)
+def get_question_and_answer():
+    RANDOM_NUM = randint(MIN_RANGE, MAX_RANGE)
     is_prime = is_prime_num(RANDOM_NUM)
     if is_prime:
         answer = 'yes'
