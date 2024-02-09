@@ -10,7 +10,6 @@ def is_even_num(num: int) -> bool:
 def get_num_and_is_even_answer():
     RANDOM_NUM = randint(1, 100)
     is_even = is_even_num(RANDOM_NUM)
-    answer = str()
     if is_even:
         answer = 'yes'
     else:

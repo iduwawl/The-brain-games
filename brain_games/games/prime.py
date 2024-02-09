@@ -16,7 +16,6 @@ def is_prime_num(num: int) -> bool:
 def get_num_and_is_prime_answer():
     RANDOM_NUM = randint(2, 100)
     is_prime = is_prime_num(RANDOM_NUM)
-    answer = str()
     if is_prime:
         answer = 'yes'
     else:
