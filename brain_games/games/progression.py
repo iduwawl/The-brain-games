@@ -2,10 +2,13 @@ from random import choice
 from random import randint
 
 GAME_RULE = "What number is missing in the progression?"
+MIN_STEP = 1
+MAX_STEP = 10
 
 
 def get_random_list_and_num():
-    random_list = [str(x) for x in range(1, 100, randint(1, 10))][0:10]
+    random_list = [str(x)
+                   for x in range(1, 100, randint(MIN_STEP, MAX_STEP))][0:10]
     random_num = choice(random_list)
     return random_list, random_num
 
