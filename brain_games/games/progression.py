@@ -12,8 +12,8 @@ def get_progression(min_value, max_value, step_diff) -> list:
     return [str(x) for x in range(min_value, max_value, step_diff)][0:10]
 
 
-def get_question(progression, index_num_to_replace) -> str:
-    progression[index_num_to_replace] = '..'
+def get_question(progression, index) -> str:
+    progression[index] = '..'
     return ' '.join(progression)
 
 
