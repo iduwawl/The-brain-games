@@ -10,7 +10,7 @@ MAX_DIFF_PROGRESSION = 9
 MIN_INDEX_MISS_NUM = 0
 
 
-def get_progression(first_num, how_many_nums, difference) -> list:
+def get_progression(first_num, difference, how_many_nums) -> list:
     return [x for x in range(first_num, how_many_nums, difference)][0:10]
 
 
