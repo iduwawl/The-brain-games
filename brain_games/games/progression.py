@@ -14,8 +14,12 @@ def get_progression(first_num, last_num, step_diff) -> list:
     return [x for x in range(first_num, last_num, step_diff)][0:10]
 
 
-def get_progression_with_replaced_num(progression, index_num_to_replace) -> str:
-    progression[index_num_to_replace] = '..'
+def get_progression_with_hiden_num(progression, index_num_to_hide) -> list:
+    progression[index_num_to_hide] = '..'
+    return progression
+
+
+def get_progression_turned_to_str(progression) -> str:
     return ' '.join(map(str, progression))
 
 
@@ -26,5 +30,7 @@ def get_question_and_correct_answer():
     progression = get_progression(min_num, max_num, step)
     index_of_miss_num = randint(MIN_INDEX_MISS_NUM, len(progression) - 1)
     correct_answer = progression[index_of_miss_num]
-    question = get_progression_with_replaced_num(progression, index_of_miss_num)
+    progression_with_hiden_num = get_progression_with_hiden_num(
+        progression, index_of_miss_num)
+    question = get_progression_turned_to_str(progression_with_hiden_num)
     return question, str(correct_answer)
