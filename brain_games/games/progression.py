@@ -19,7 +19,7 @@ def get_progression_with_hiden_num(progression, index_num_to_hide) -> list:
     return progression
 
 
-def get_progression_turned_to_str(progression) -> str:
+def get_progression_converted_to_str(progression) -> str:
     return ' '.join(map(str, progression))
 
 
@@ -32,5 +32,5 @@ def get_question_and_correct_answer():
     correct_answer = progression[index_of_miss_num]
     progression_with_hiden_num = get_progression_with_hiden_num(
         progression, index_of_miss_num)
-    question = get_progression_turned_to_str(progression_with_hiden_num)
+    question = get_progression_converted_to_str(progression_with_hiden_num)
     return question, str(correct_answer)
