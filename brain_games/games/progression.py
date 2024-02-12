@@ -25,9 +25,9 @@ def get_progression_converted_to_str(progression) -> str:
 
 def get_question_and_correct_answer():
     first_num = randint(MIN_FIRST_NUM, MAX_FIRST_NUM)
-    last_num = randint(MIN_LAST_NUM, MAX_LAST_NUM)
     difference = randint(MIN_DIFF_PROGRESSION, MAX_DIFF_PROGRESSION)
-    progression = get_progression(first_num, last_num, difference)
+    last_num = randint(MIN_LAST_NUM, MAX_LAST_NUM)
+    progression = get_progression(first_num, difference, last_num)
     index_of_miss_num = randint(MIN_INDEX_MISS_NUM, len(progression) - 1)
     correct_answer = progression[index_of_miss_num]
     progression_with_hiden_num = get_progression_with_hiden_num(
