@@ -29,7 +29,7 @@ def get_question_and_correct_answer():
     last_num = randint(MIN_LAST_NUM, MAX_LAST_NUM)
     progression = get_progression(first_num, difference, last_num)
     sliced_progression = progression[0:10]
-    index_of_miss_num = randint(MIN_INDEX_MISS_NUM, len(progression) - 1)
+    index_of_miss_num = randint(MIN_INDEX_MISS_NUM, len(sliced_progression) - 1)
     correct_answer = sliced_progression[index_of_miss_num]
     progression_with_hiden_num = get_progression_with_hiden_num(
         sliced_progression, index_of_miss_num)
