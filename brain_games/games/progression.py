@@ -11,7 +11,11 @@ MIN_INDEX_MISS_NUM = 0
 
 
 def get_progression(first_num, difference, how_many_nums) -> list:
-    return [x for x in range(first_num, how_many_nums, difference)]
+    progression = []
+    for x in range(how_many_nums):
+        progression.append(first_num)
+        first_num += difference
+    return progression
 
 
 def get_progression_with_hiden_num(progression, index_num_to_hide) -> list:
