@@ -11,7 +11,7 @@ MIN_INDEX_MISS_NUM = 0
 
 def get_progression(first_num, difference, how_many_nums) -> list:
     progression = []
-    for x in range(how_many_nums):
+    for _ in range(how_many_nums):
         progression.append(first_num)
         first_num += difference
     return progression
