@@ -7,6 +7,8 @@ MAX_RANGE = 100
 
 
 def is_prime_num(num: int) -> bool:
+    if num < 2:
+        return False
     for i in range(2, int(num / 2) + 1):
         if (num % i) == 0:
             return False
