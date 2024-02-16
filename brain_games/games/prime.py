@@ -10,9 +10,7 @@ def is_prime_num(num: int) -> bool:
     for i in range(2, int(num / 2) + 1):
         if (num % i) == 0:
             return False
-            break
-    else:
-        return True
+    return True
 
 
 def get_question_and_correct_answer():
